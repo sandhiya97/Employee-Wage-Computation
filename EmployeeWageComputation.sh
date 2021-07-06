@@ -14,5 +14,8 @@ echo "$DailyEmpWage is the Daily wage of an Employee"
 partTimeHour=8
 DailyEmpWagePartTime=$((wagePerHr*partTimeHour))
 workingDays=20
-wagesforMonth=$((DailyEmpWage*workingDays))
-echo  "$wagesforMonth is the wages for a month for each employee"
+for((i=0;i<=workingDays;i++))
+{
+  wages=$((DailyEmpWage*workingDays))
+}
+echo $wages
